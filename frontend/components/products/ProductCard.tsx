@@ -39,6 +39,9 @@ export default function ProductCard({
             alt={name}
             fill
             sizes="(max-width: 640px) 50vw, 33vw"
+            onError={(e) => {
+              e.currentTarget.src = "/frontend/public/hero2.jpg";
+            }}
             className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
           />
 
